@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
+import './css/App.css';
+import Gray from './components/GrayButtons';
+import Pink from './components/PinkButtons';
+import Black from './components/BlackButtons';
+
+
 
 class App extends Component {
   render() {
@@ -15,40 +20,38 @@ class App extends Component {
           </div>
           <div className="keys">
             <p>
-              <input type="button" className="button gray" value="mrc" />
-              <input type="button" className="button gray" value="m-" />
-              <input type="button" className="button gray" value="m+" />
-              <input type="button" className="button pink" value="/" />
+              <Gray value="mrc" />
+              <Gray value="m-" />
+              <Gray value="m+" />
+              <Pink value="/" />
             </p>
             <p>
-            <input type="button" className="button black" value="7" />
-              <input type="button" className="button black" value="8" />
-                <input type="button" className="button black" value="9" />
-                <input type="button" className="button pink" value="*" />
+                <Black value="7" />
+                <Black value="8" />
+                <Black value="9" />
+                <Pink value="*" />
               </p>
               <p>
-                <input type="button" className="button black" value="4" />
-                <input type="button" className="button black" value="5" />
-                  <input type="button" className="button black" value="6" />
-                  <input type="button" className="button pink" value="-" />
-                  </p>
-                <p>
-                  <input type="button" className="button black" value="1" />
-                <input type="button" className="button black" value="2" />
-                  <input type="button" className="button black" value="3" />
-                  <input type="button" className="button pink" value="+" />
-
-                  </p>
-                <p>
-                  <input type="button" className="button black" value="0" />
-                <input type="button" className="button black" value="." />
-                  <input type="button" className="button black" value="C" />
-                  <input type="button" className="button orange" value="=" />
-
-                  </p>
-              </div>
+                <Black value="4" />
+                <Black value="5" />
+                <Black value="6" />
+                <Pink value="-" />
+              </p>
+              <p>
+                <Black value="1" />
+                <Black value="2" />
+                <Black value="3" />
+                <Pink value="+" />
+              </p>
+              <p>
+                <Black value="0" />
+                <Black value="." />
+                <Black value="C" />
+                <input type="button" className="button orange" value="=" />
+              </p>
             </div>
           </div>
+        </div>
     );
   }
 }
